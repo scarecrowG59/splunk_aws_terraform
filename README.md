@@ -26,30 +26,20 @@ This project automates the provisioning of AWS infrastructure to deploy and conn
    cd splunk_aws_terraform
 Initialize Terraform:
 
-bash
-Копировать
-Редактировать
-terraform init
+- terraform init
+  
 Apply the configuration:
 
-bash
-Копировать
-Редактировать
-terraform apply
+- terraform apply
+  
 After provisioning, note the public IP of the EC2 instance and connect:
 
-bash
-Копировать
-Редактировать
-ssh -i splunk-connect.pem ec2-user@<public-ip>
+- ssh -i splunk-connect.pem ec2-user@<public-ip>
 
 - Cleanup
 To destroy the infrastructure and avoid AWS charges:
 
-bash
-Копировать
-Редактировать
-terraform destroy
+- terraform destroy
 
  - Files
 File	Description
